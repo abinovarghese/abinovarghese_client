@@ -1,0 +1,93 @@
+// mat-card{
+//     max-width: 300px;
+//     margin-bottom: 50px;
+//     float: left;
+// }
+
+.projects{
+    padding: 3% 1.75%;
+    float: left;
+    //min-height: 500px;;
+}
+
+.project-card:hover{
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.4), 0 8px 8px 0 rgba(0,0,0,.28), 0 8px 8px 0 rgba(0,0,0,.24) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.5,1.6,.5,2),box-shadow 200ms cubic-bezier(.8,0,.4,2);
+}
+
+.project-card{
+    max-width: 400px;
+    //height: 280px;
+}
+
+.sec_projects{
+    padding: 0% 3.5%;
+}
+
+.header3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: unset;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(255, 250, 247);
+  }
+
+  
+  @media screen and (max-width: 700px ) {
+    
+    .projects{
+        
+        float: left;
+        padding-right: 10%;
+        padding-left: 0% !important;
+        //min-height: 500px;;
+    }
+    
+    .project-card:hover{
+        box-shadow: 0 8px 8px 8px rgba(0,0,0,.4), 0 8px 8px 0 rgba(0,0,0,.28), 0 8px 8px 0 rgba(0,0,0,.24) !important;
+        transform: translate3d(0,0,0);
+        transition: background .4s cubic-bezier(.5,1.6,.5,2),box-shadow 200ms cubic-bezier(.8,0,.4,2);
+    }
+    
+    .project-card{
+        max-width: 400px;
+        //height: 280px;
+    }
+    
+    .sec_projects{
+        padding: 0% 3.5%;
+        margin-left: 10%;
+    }
+
+  }
+
+
+  /* Responsive Styles */
+  @media screen and (max-width: 960px) {
+
+    .projects{
+        
+        float: left;
+        padding-left: 14%;
+        //min-height: 500px;;
+    }
+    
+    .project-card:hover{
+        box-shadow: 0 8px 8px 8px rgba(0,0,0,.4), 0 8px 8px 0 rgba(0,0,0,.28), 0 8px 8px 0 rgba(0,0,0,.24) !important;
+        transform: translate3d(0,0,0);
+        transition: background .4s cubic-bezier(.5,1.6,.5,2),box-shadow 200ms cubic-bezier(.8,0,.4,2);
+    }
+    
+    .project-card{
+        max-width: 400px;
+        //height: 280px;
+    }
+    
+    .sec_projects{
+        padding: 0% 3.5%;
+        margin-left: 10%;
+    }
+    
+  }

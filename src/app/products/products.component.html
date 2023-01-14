@@ -1,0 +1,24 @@
+<h3>
+    <u><p class="header3" style="text-align: center;">
+    My Projects
+    </p></u>
+</h3>
+<ngx-ui-loader></ngx-ui-loader>
+<div class="sec_projects">
+    <div class="projects" fxLayout="row" fxLayoutAlign="start center" *ngFor="let project of projects">
+        <mat-card class="project-card" fxFlex="10" (click)="reRoute(project.Link)"  [style.backgroundColor]="'#eeecd5a1'">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{project.ProjectName}}</mat-card-title>
+                <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+            </mat-card-header>
+
+            <img class="view overlay" height="230px" width="10px" *ngIf="project.SnapLocation" mat-card-image [src]="project.SnapLocation" alt="Photo of a Shiba Inu">
+
+            <mat-card-content>
+                    {{project.ProjectShortDesc}}
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+    

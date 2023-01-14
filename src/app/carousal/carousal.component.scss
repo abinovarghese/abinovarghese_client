@@ -1,0 +1,33 @@
+.carousals{
+    width:45%;
+    margin-left: 26%;
+}
+
+.carousal_img{
+    height:350px;
+    width:100%;
+}
+
+.carousel-caption h3{
+    color: black !important;
+}
+
+.carousel-caption{
+    color: black !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .carousal_img{
+        height:270px;
+        width:100%;
+    }
+
+    .carousals{
+        width:60%;
+        margin-left: 20%;
+    }
+
+}

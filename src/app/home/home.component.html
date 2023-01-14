@@ -1,0 +1,38 @@
+<div class="heading_stories">
+  <h2 class="blog__header2">
+      Top Stories
+  </h2>
+</div>
+<br>
+<app-carousal></app-carousal>
+<br>
+<section id="blog" class="blog">
+        <div class="blog__header">
+          <h2 class="blog__header2">
+            Medium Blogs
+          </h2>
+        </div>
+      
+        <ngx-ui-loader></ngx-ui-loader>
+        <div class="sec_div">
+        <div class="post_div"  *ngFor="let post of blogPosts">
+                <mat-card class="post" (click)="reRoute(post.link)"  [style.backgroundColor]="'#eeecd5a1'">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>{{post.title}}</mat-card-title>
+                        <!-- <mat-card-subtitle>{{post.author}}</mat-card-subtitle> -->
+                        <mat-card-subtitle>{{post.date}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image [src]="post.thumbnail" height="250px" width="150px" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                            <p>
+                              {{post.intro}}
+                            </p>
+                    </mat-card-content>
+                </mat-card>
+               
+                <br>
+                </div>
+              </div>
+</section>
+
