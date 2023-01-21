@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import {BlogdataService} from '../blogdata.service';
 
 
@@ -12,6 +13,7 @@ export class HomeComponent implements OnInit {
   postDetails = {};
 
   blogPosts=[];
+  apiUrl = environment.API_URL;
 
   constructor(private blogdataService: BlogdataService) {
     this.init()

@@ -13,7 +13,7 @@
                 <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
             </mat-card-header>
 
-            <img class="view overlay" height="230px" width="10px" *ngIf="project.SnapLocation" mat-card-image [src]="project.SnapLocation" alt="Photo of a Shiba Inu">
+            <img class="view overlay" height="230px" width="10px" *ngIf="project.SnapLocation" mat-card-image [src]="apiUrl + project.SnapLocation" alt="Photo of a Shiba Inu">
 
             <mat-card-content>
                     {{project.ProjectShortDesc}}

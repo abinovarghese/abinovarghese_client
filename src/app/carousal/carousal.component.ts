@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {ProjectdataService} from '../projectdata.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-carousal',
@@ -12,6 +13,7 @@ export class CarousalComponent implements OnInit {
 
   images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`)
   stories = [];
+  apiUrl = environment.API_URL;
   
   constructor(private projectdataService: ProjectdataService) { }
 

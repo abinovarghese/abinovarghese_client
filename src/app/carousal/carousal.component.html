@@ -2,7 +2,7 @@
     <ngb-carousel class="carousals" *ngFor="let story of stories">
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img class="carousal_img" [src]="story.SnapLocation" alt="Random first slide">
+            <img class="carousal_img" [src]="apiUrl + story.SnapLocation" alt="Random first slide">
           </div>
           <div class="carousel-caption">
             <h3>{{story.StoryName}}</h3>

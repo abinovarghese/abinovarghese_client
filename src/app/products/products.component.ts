@@ -14,6 +14,8 @@ export class ProductsComponent implements OnInit {
 
   projects : any=[];
 
+  apiUrl = environment.API_URL;
+
   constructor(private http: HttpClient,private projectdataService: ProjectdataService) { }
 
   ngOnInit() {
